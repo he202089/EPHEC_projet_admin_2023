@@ -9,3 +9,6 @@ COPY named.conf /etc/bind/named.conf
 # Expose the ports
 EXPOSE 53/udp
 EXPOSE 53/tcp
+
+# Start the service
+CMD ["/usr/sbin/named", "-g", "-c", "/etc/bind/named.conf"]
