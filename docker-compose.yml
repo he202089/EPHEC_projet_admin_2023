@@ -2,21 +2,21 @@ version: "3.8" # Version de Compose
 name: woodytoys # Nom du projet
 services:
   dns:
-    build: ./resolver
+    build: ./Intranet/dns
     ports:
       - 53:53/udp
       - 53:53
     volumes:
-      - ./resolver/named.conf:/etc/bind/named.conf
-      - ./resolver/woodytoys.lab:/etc/bind/woodytoys.lab
-      - ./resolver/woodytoys.lab.rr.zone:/etc/bind/woodytoys.lab.rr.zone
+      - ./Intranet/dns/named.conf:/etc/bind/named.conf
+      - ./Intranet/dns/woodytoys.lab:/etc/bind/woodytoys.lab
+      - ./Intranet/dns/woodytoys.lab.rr.zone:/etc/bind/woodytoys.lab.rr.zone
     networks:
       secure_zone:
         ipv4_address: 192.168.0.1
-  internal_web: # Nom du conteneur
-    build: ./internal_web
+  in_web: # Nom du conteneur
+    build: ./Intranet/web
     volumes:
-      - ./internal_web/nginx:/usr/share/nginx
+      - ./Intranet/web/nginx:/usr/share/nginx
     links: # Liaison avec d'autres conteneurs
       - db:db
     ports: # Port hôte -> Port conteneur
@@ -25,8 +25,8 @@ services:
     networks: # Réseau associé
       secure_zone:
         ipv4_address: 192.168.0.2
-  db:
-    build: ./db
+  in_db:
+    build: ./Intranet/database
     volumes:
       - db-data:/var/lib/mysql
     ports:
