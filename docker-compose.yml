@@ -18,7 +18,7 @@ services:
     volumes:
       - ./Intranet/web/nginx:/usr/share/nginx
     links: # Liaison avec d'autres conteneurs
-      - db:db
+      - in_db:in_db
     ports: # Port hôte -> Port conteneur
       - 80:80
       - 443:443
@@ -26,7 +26,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.2
   in_db:
-    build: ./Intranet/database
+    build: ./Intranet/db
     volumes:
       - db-data:/var/lib/mysql
     ports:
