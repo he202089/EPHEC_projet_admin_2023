@@ -12,9 +12,8 @@ $TTL 86400
 
 ns           IN     A       192.168.0.1
 resolver     IN     A       192.168.0.1
-soa          IN     A       192.168.0.2
-www          IN     A       192.168.0.3
-mail         IN     A       192.168.0.4
+www          IN     A       192.168.0.2
+mail         IN     A       192.168.0.3
 
 imap         IN     CNAME   mail
 pop3         IN     CNAME   mail

@@ -7,10 +7,9 @@ $TTL 86400
                     604800     ; expire after 1 week
                     86400 )    ; minimum TTL of 1 day
 
-      IN     NS     ns.woodytoys.lab.
+     IN     NS     ns.woodytoys.lab.
 
-1    IN     PTR    resolver.woodytoys.lab.
 1    IN     PTR    ns.woodytoys.lab.
-2    IN     PTR    soa.woodytoys.lab.
-3    IN     PTR    www.woodytoys.lab.
-4    IN     PTR    mail.woodytoys.lab.
+1    IN     PTR    resolver.woodytoys.lab.
+2    IN     PTR    www.woodytoys.lab.
+3    IN     PTR    mail.woodytoys.lab.

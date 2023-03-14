@@ -2,7 +2,6 @@ FROM ubuntu/bind9:latest
 # Auteur du Dockerfile - Optionnel
 MAINTAINER Groupe1
 COPY named.conf /etc/bind/named.conf
-COPY woodytoys.lab.named.conf /etc/bind/woodytoys.lab.named.conf
 COPY woodytoys.lab /etc/bind/woodytoys.lab
 COPY woodytoys.lab.rr.zone /etc/bind/woodytoys.lab.rr.zone
 # Variable d'environnement qui sera disponible au sein du conteneur.
