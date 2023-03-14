@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 version: "3.8" # Version de Compose
 name: woodytoys # Nom du projet
 services:
@@ -7,13 +6,13 @@ services:
     volumes:
       - ./internal_web/nginx:/usr/share/nginx
     links: # Liaison avec d'autres conteneurs
-      - db:DB
+      - db:db
     ports: # Port hôte -> Port conteneur
       - 80:80
       - 443:443
     networks: # Réseau associé
       secure_zone:
-        ipv4_address: 192.168.0.4
+        ipv4_address: 192.168.0.3
   db:
     build: ./db
     volumes:
@@ -22,7 +21,7 @@ services:
       - 3306:3306
     networks:
       secure_zone:
-        ipv4_address: 192.168.0.5
+        ipv4_address: 192.168.0.4
   dns:
     build: ./resolver
     ports:
@@ -30,13 +29,13 @@ services:
       - 53:53
     volumes:
       - ./resolver/named.conf:/etc/bind/named.conf
-      - ./resolv.conf:/etc/resolv.conf
+      #- ./resolv.conf:/etc/resolv.conf
       - ./resolver/woodytoys.lab.named.conf:/etc/bind/woodytoys.lab.named.conf
       - ./resolver/woodytoys.lab:/etc/bind/woodytoys.lab
       - ./resolver/woodytoys.lab.rr.zone:/etc/bind/woodytoys.lab.rr.zone
     networks:
       secure_zone:
-        ipv4_address: 192.168.0.1
+        ipv4_address: 192.168.0.2
         # 192.168.0.2 pour le SOA?
 volumes: # Définition des volumes
   db-data:
@@ -45,7 +44,5 @@ networks:
     ipam:
       driver: default
       config: 
-        - subnet: "192.168.0.0/24"
-=======
-
->>>>>>> ea05f6104f885234a27040ccb4ee0145e587332b
+        - subnet: 192.168.0.0/16
+          gateway: 192.168.0.1
