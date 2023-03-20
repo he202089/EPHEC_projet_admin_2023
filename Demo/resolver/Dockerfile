@@ -4,7 +4,7 @@ LABEL group="2TL2-1"
 
 COPY named.conf /etc/bind/named.conf
 COPY woodytoys.lab /etc/bind/woodytoys.lab
-COPY woodytoys.lab.rr.zone /etc/bind/woodytoys.lab.rr.zone
+COPY woodytoys.lab.reverse /etc/bind/woodytoys.lab.reverse
 
 EXPOSE 53/udp
 EXPOSE 53/tcp
