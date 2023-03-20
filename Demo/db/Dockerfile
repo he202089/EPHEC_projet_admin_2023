@@ -1,6 +1,6 @@
 FROM mysql:latest
 
-MAINTAINER Groupe1
+LABEL group="2TL2-1"
 
 RUN chown -R mysql:root /var/lib/mysql/
 
@@ -8,7 +8,6 @@ ENV MYSQL_DATABASE=database
 ENV MYSQL_USER=user
 ENV MYSQL_PASSWORD=password
 ENV MYSQL_ROOT_PASSWORD=password
-
 
 ADD data.sql /etc/mysql/data.sql
 
