@@ -1,0 +1,45 @@
+version: "3.8"
+name: woodytoys
+services:
+  resolver:
+    build: ./resolver
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+    volumes:
+      - ./resolver/named.conf:/etc/bind/named.conf
+      - ./resolver/woodytoys.lab:/etc/bind/woodytoys.lab
+      - ./resolver/woodytoys.lab.rr.zone:/etc/bind/woodytoys.lab.rr.zone
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.1
+  web:
+    build: ./web
+    volumes:
+      - ./web/nginx:/usr/share/nginx
+    links:
+      - db:db
+    ports:
+      - 80:80
+      - 443:443
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.2
+  db:
+    build: ./db
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.3
+volumes:
+  db-data:
+networks:
+  secure_zone:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.0.0/16
+          gateway: 192.168.254.254
