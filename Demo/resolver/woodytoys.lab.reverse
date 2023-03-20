@@ -1,6 +1,6 @@
 $ORIGIN 0.168.192.in-addr.arpa.
 $TTL 86400
-@     IN     SOA    soa.woodytoys.lab.     hostmaster.woodytoys.lab. (
+@    IN     SOA    soa.woodytoys.lab.    hostmaster.woodytoys.lab. (
                     2001062501 ; serial
                     21600      ; refresh after 6 hours
                     3600       ; retry after 1 hour
