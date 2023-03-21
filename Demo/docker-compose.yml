@@ -28,15 +28,25 @@ services:
     networks:
       secure_zone:
         ipv4_address: 192.168.0.3
+  mail:
+    build: ./mail
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.4
   client_1:
-    build: ./client
+    build: ./client_1
     dns:
       - 192.168.0.1
     networks:
       secure_zone:
         ipv4_address: 192.168.0.200
   client_2:
-    build: ./client
+    build: ./client_2
     dns:
       - 192.168.0.1
     networks:
