@@ -28,6 +28,20 @@ services:
     networks:
       secure_zone:
         ipv4_address: 192.168.0.3
+  client_1:
+    build: ./client
+    dns:
+      - 192.168.0.1
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.200
+  client_2:
+    build: ./client
+    dns:
+      - 192.168.0.1
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.201
 volumes:
   db-data:
 networks:

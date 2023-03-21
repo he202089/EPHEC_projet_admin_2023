@@ -1,11 +1,14 @@
-DROP TABLE IF EXISTS `Customers`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
+DROP TABLE IF EXISTS `Products`;
 
-CREATE TABLE `Customers` (
-  `CustomerName` varchar(255) DEFAULT NULL,
+CREATE TABLE `Products` (
+  `Product` varchar(255) DEFAULT NULL,
+  `Quantity` int(11) DEFAULT NULL,
+  `Price` int(11) DEFAULT NULL
+);
 
-INSERT INTO `Customers` VALUES ('Cardinal','Tom B. Erichsen','Skagen 21','Stavanger','4006','Norway'),('Wilman Kala','Matti Karttunen','Keskuskatu 45','Helsinki','21240','Finland');
-/*!40000 ALTER TABLE `Customers` ENABLE KEYS */;
-
-UNLOCK TABLES;
+INSERT INTO `Products` (`Product`, `Quantity`, `Price`) VALUES
+('Teddy Bear', 10, 100),
+('Car', 20, 200),
+('Doll', 30, 300),
+('Train', 40, 400),
+('Snakes', 50, 500);
