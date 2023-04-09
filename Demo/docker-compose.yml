@@ -2,6 +2,7 @@ version: "3.8"
 name: woodytoys
 services:
   resolver:
+    container_name: 'resolver'
     build: ./resolver
     ports:
       - 53:53/udp
@@ -10,6 +11,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.1
   web:
+    container_name: 'web'
     build: ./web
     links:
       - db:db
@@ -20,6 +22,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.2
   db:
+    container_name: 'db'
     build: ./db
     volumes:
       - db-data:/var/lib/mysql
@@ -29,6 +32,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.3
   mail:
+    container_name: 'mail'
     build: ./mail
     ports:
       - "25:25"
@@ -39,6 +43,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.4
   client_1:
+    container_name: 'toto'
     build: ./client_1
     dns:
       - 192.168.0.1
@@ -46,6 +51,7 @@ services:
       secure_zone:
         ipv4_address: 192.168.0.200
   client_2:
+    container_name: 'tutu'
     build: ./client_2
     dns:
       - 192.168.0.1
