@@ -1,5 +1,7 @@
 FROM ubuntu:latest
 
+LABEL group="2TL2-1"
+
 ENV DEBIAN_FRONTEND=noninteractive 
 
 # Install Apache and PHP
