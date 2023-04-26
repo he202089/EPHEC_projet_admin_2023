@@ -8,7 +8,6 @@ $TTL 86400
                     86400 )    ; minimum TTL of 1 day
 
       IN     NS     ns.l2-1.ephec-ti.be.
-      IN     MX     10     mail.l2-1.ephec-ti.be.
 
 ns           IN     A       192.168.0.1
 resolver     IN     A       192.168.0.1

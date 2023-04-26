@@ -1,0 +1,29 @@
+version: "3.8"
+#name: woodytoys
+services:
+  resolver:
+    container_name: 'resolver'
+    build: ./resolver
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+    networks:
+      secure_zone:
+        ipv4_address: 192.168.0.1
+  # web:
+  #   container_name: 'web'
+  #   build: ./web
+  #   ports:
+  #     - 80:80
+  #     #- 443:443
+  #   networks:
+  #     secure_zone:
+  #       ipv4_address: 192.168.0.2
+networks:
+  secure_zone:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.0.0/16
+          gateway: 192.168.254.254
+          
