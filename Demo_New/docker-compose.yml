@@ -1,0 +1,120 @@
+version: "3.8"
+#name: woodytoys
+services:
+  resolver:
+    container_name: 'resolver'
+    build: ./trusted_zone/resolver
+    ports:
+      - 53:53/udp
+      - 53:53/tcp
+    networks:
+      trusted_zone:
+        ipv4_address: 192.168.0.1
+  soa_ext:
+    container_name: 'soa_ext'
+    build: ./DMZ/soa_ext
+    ports:
+      - 8053:53/udp
+      - 8053:53/tcp
+    networks:
+      dmz:
+        ipv4_address: 192.168.2.1
+  in_web:
+    container_name: 'in_web'
+    build: ./trusted_zone/web
+    links:
+      - db:db
+    ports:
+      - 8080:8080
+      #- 443:443
+    networks:
+      trusted_zone:
+        ipv4_address: 192.168.0.2
+      secured_DMZ:
+        ipv4_address: 192.168.3.20
+  db:
+    container_name: 'db'
+    build: ./secured_DMZ/db
+    volumes:
+      - db-data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    networks:
+      secured_DMZ:
+        ipv4_address: 192.168.3.1
+  mail:
+    container_name: 'mail'
+    build: ./DMZ/mail
+    ports:
+      - "25:25"
+      - "143:143"
+      - "587:587"
+      - "993:993"
+    networks:
+      dmz:
+        ipv4_address: 192.168.2.4
+  in_client_1:
+    container_name: 'in_client_1'
+    build: ./Intranet/client_1
+    dns:
+      - 192.168.0.1
+      #- 192.168.2.1
+      - 8.8.8.8
+    networks:
+      intranet:
+        ipv4_address: 192.168.4.200
+      trusted_zone:
+        ipv4_address: 192.168.0.20
+      dmz:
+        ipv4_address: 192.168.2.20
+  in_client_2:
+    container_name: 'in_client_2'
+    build: ./Intranet/client_2
+    dns:
+      - 192.168.0.1
+    networks:
+      intranet:
+        ipv4_address: 192.168.4.201
+      trusted_zone:
+        ipv4_address: 192.168.0.21
+      dmz:
+        ipv4_address: 192.168.2.21
+
+  ext_web:
+    container_name: 'ext_web'
+    build: ./DMZ/web
+    ports:
+      - 80:80
+    dns:
+      - 192.168.0.1
+    networks:
+      dmz:
+        ipv4_address: 192.168.2.2
+volumes:
+  db-data:
+networks:
+  secured_DMZ:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.3.0/24
+          gateway: 192.168.3.254
+  trusted_zone:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.0.0/24
+          gateway: 192.168.0.254
+  dmz:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.2.0/24
+          gateway: 192.168.2.254
+  intranet:
+    ipam:
+      driver: default
+      config: 
+        - subnet: 192.168.4.0/24
+          gateway: 192.168.4.254
+          
