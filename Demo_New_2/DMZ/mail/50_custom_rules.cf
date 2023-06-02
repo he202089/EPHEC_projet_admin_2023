@@ -1,0 +1,33 @@
+# Custom rules for SpamAssassin
+
+# Rule to assign a higher score to emails with excessive capital letters
+header EXCESSIVE_CAPS_SUBJECT Subject =~ /\b[A-Z]{8,}\b/
+score EXCESSIVE_CAPS_SUBJECT 2.0
+
+# Rule to assign a higher score to emails with suspicious attachments
+ifplugin Mail::SpamAssassin::Plugin::Attachment
+    header SUSPICIOUS_ATTACHMENT_EXISTS eval:check_attachment_presence()
+    score SUSPICIOUS_ATTACHMENT_EXISTS 1.5
+endif
+
+# Rule to assign a higher score to emails with HTML content
+ifplugin Mail::SpamAssassin::Plugin::HTML
+    body HTML_CONTENT eval:check_html()
+    score HTML_CONTENT 1.0
+endif
+
+# Rule to assign a higher score to emails with known phishing URLs
+body PHISHING_URLS /paypal\.com|bankofamerica\.com|example\.org/
+score PHISHING_URLS 2.5
+
+# Rule to assign a lower score to emails from trusted senders
+header FROM_TRUSTED_SENDER From:addr =~ /@trusted-domain\.com/
+score FROM_TRUSTED_SENDER -1.0
+
+# Rule to assign a higher score to emails with suspicious headers
+header SUSPICIOUS_HEADERS_EXIST eval:check_suspicious_headers()
+score SUSPICIOUS_HEADERS_EXIST 1.5
+
+# Rule to assign a higher score to emails with excessive exclamation marks
+header EXCESSIVE_EXCLAMATION_MARKS eval:check_excessive_exclamation_marks()
+score EXCESSIVE_EXCLAMATION_MARKS 1.0

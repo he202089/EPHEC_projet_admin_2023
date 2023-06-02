@@ -1,0 +1,1 @@
+/^X-Spam-Status:/i PREPEND X-Spam-Flag: YES

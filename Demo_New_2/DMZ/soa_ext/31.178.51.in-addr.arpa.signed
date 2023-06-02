@@ -1,0 +1,160 @@
+; File written on Thu Jun  1 10:24:04 2023
+; dnssec_signzone version 9.18.12-1ubuntu1-Ubuntu
+31.178.51.in-addr.arpa. 86400   IN SOA  soa.l2-1.ephec-ti.be. hostmaster.l2-1.ephec-ti.be. (
+                                        2001062507 ; serial
+                                        21600      ; refresh (6 hours)
+                                        3600       ; retry (1 hour)
+                                        604800     ; expire (1 week)
+                                        86400      ; minimum (1 day)
+                                        )
+                        86400   RRSIG   SOA 8 5 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        m9c8KOsNb9wxfnS9gD3ozqGwi66fRMztLmPC
+                                        ThaY/yznwdkMkl9qZFL/GPeCVDdPebHBiy3A
+                                        Mjb/jQMED3rHRgLSquk0FgqOQ8FuttqPv08I
+                                        hb5IWVFqOmvCfcotJzl12c9AmiwqAbC8/mIr
+                                        Yn2sDwlvZ5aSmlQhgA4BNrGplMPFWlPguabQ
+                                        OfxDKSzELkB8z7l4mOAsbQRXqFrwVgZnDA3q
+                                        f2Z0G4xthlZ7MOta0cpZMlIYnRu9tGC1s06a
+                                        7ydK8tMA+jUhYvL4szJ7umCWjg1Yr8uAlL8B
+                                        O2gaYY/HRx5fAmlm/fy3MhnGQDn27LnbEupz
+                                        44GD8WoSDxzshZaDgQ== )
+                        86400   NS      ns.l2-1.ephec-ti.be.
+                        86400   RRSIG   NS 8 5 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        DLb+E+m15TYdG2bB93zrknfPA6CvLdsSoAHL
+                                        73rsVUBfb8oGH5l8j41CizhkTkkTSIwUXHH3
+                                        BucKijur1pk2yFki4BTJ31M6CqxC4++NJyMz
+                                        Z6Od6N0DstWBqRplCD+VJMNJYMnfyX4hrWMo
+                                        LPQK9zO0b7wsTyZH46CtLUm67vpLQ4RYs/CF
+                                        qnSsrh1Wo/YjpCQQTJV50XXfPWtcGgPrnHss
+                                        xlMT5CbBXGKUqQBS0nh9QAkELl023VmyWx15
+                                        Kt++M8dk7VNT6Z84uuFggpwNhjutgx1gw5JP
+                                        q9NTTxPIFcQ+U4pmXSoF7pDOYAY/mAoHhNPD
+                                        Xnawuu4gp9z3iMW36A== )
+                        86400   DNSKEY  256 3 8 (
+                                        AwEAAbuKLPUs+d2iYiTjVbKuX5Pq/yVU0wIn
+                                        CEbdJvUoIZkIUqtvvADTTkLpKECunQ4ti6nm
+                                        l7csXnt2Z53Q9w9ODAWdM5L+UvlEB1eKJB7E
+                                        +wxmNJMuQwzdelAj7HdiwP4o+HfRrCOGPJZj
+                                        vxdkbCosKpz1g1nB/Q0Ro8y+lnPGq6EGKpJm
+                                        /AbAs08UOm83GLbR90hrYp6yybcx/TwTUxd6
+                                        0mg5IhC8D1MCJP8Eu5yeWJAmbHvvabbrSZi9
+                                        9TMKoRsRDd7gExTDXf1dtIDjO7+9KSqVzJgY
+                                        /zhKkRoLxj8IQF/G1WZNMNr9NYAtlUa2t/wP
+                                        FQ1twJFwr6FcYANsm9wlsSk=
+                                        ) ; ZSK; alg = RSASHA256 ; key id = 56521
+                        86400   DNSKEY  257 3 8 (
+                                        AwEAAdYVJ2GWwdfQwkNqkOJKzMQTAHPZVNRo
+                                        saRjalrvi66FPM+yrujZSyXZyvsCX9mBjtTv
+                                        Srzd4im9xCx8/9aB//fhT1nwJcjCwd1wYOHh
+                                        8tBQMy7ncev6ZWqia9aiKoxQT6FhJsPvUJsh
+                                        hJqohgEe4boxVf21JMTAcJ2yEKhrMM54bnc9
+                                        9rw4OpdfN6zncCSksmoRLnn0GBckb2AgXB6V
+                                        1PtPw3IJkQcitjAFs2bOmdjTpE/a6VVveQin
+                                        SLkbc/lX/P3tND83H4Dit8a315cIwKCmXZeI
+                                        lV61UErX42oQVgKr4poP4ECyDoIJ4XiAEKjp
+                                        ZvAGMNRLzwSproRGSQzkJ3X0f45l2RSqG6ze
+                                        pFSZCFPha+j5DE9pEa8r0KFE+KZGdJlXJcQO
+                                        rXITesNFjiJNuhgNjL/ez8/PU4ZiBr3z6wVW
+                                        vZu4CX65YnuG7fyZLr33qlEOVAsfMomux/8W
+                                        rYzkc3i4w/TmJIGWGKQ+C3/IqalnAJzTB8MG
+                                        cqt7ncppDT0OIm96mtdGr2jxeFs6lgPrRmzC
+                                        Xv/GR9kRSfG3xulWVwBxuTgSBPbu6WZUIHNG
+                                        hYyJfsr96COgnHSXMEHUi0abQNJ+ClaD5Fn/
+                                        si/Y+Mgz2jAhOgZFMkT1ctDorYA+VhE5NKx6
+                                        jNez0EB+GE7PPYZW7o1F2Bm0lgqnGQlJiwzI
+                                        bw8X
+                                        ) ; KSK; alg = RSASHA256 ; key id = 11695
+                        86400   RRSIG   DNSKEY 8 5 86400 (
+                                        20230701092404 20230601092404 11695 31.178.51.in-addr.arpa.
+                                        pjYMigLnNY9zvWTuDoNnNsvBxvRlS0MY45AB
+                                        TAvsQsbm9r68F/LsVqCJYC5u41ITKpBCAH7h
+                                        ahdLiPmkOhMoBkvvynooZ9KMNpoSVAMgZa1/
+                                        s9VdmwIzIhR/Ve6wS39NgZsrtwM7ADnTvb3Y
+                                        Fja0cOvd0SFtltAXg25Tf0SaCfvvXAd++ttp
+                                        k1d8tJqXozKMnoG4LxirhMVOoNSGAAsJ51Bz
+                                        /e2L5FZN59PRI3l/fbVZlNurhntrJwiJKH8D
+                                        dmGOj4b6+qSVkWsbfTQfZBrveh8RrIzS5ePT
+                                        peh64ELUcsH31pvos8RNujiu77IN7/pxyyPh
+                                        /7btzZA37c1neJCNbjKmN5Xff3PYXZ4+GF8P
+                                        c0Ap02fjp0mjIzkjylDmoFelunWMFsJylNqT
+                                        aylSLBIAZdhQyn+7T1HlriDgNrljp26VGEmb
+                                        ZZ9f76ZknGdMfcA2uae5/P3Hx6BtYHY+wqcl
+                                        CK8a+y1Rbij85+YondaYoikN4LiWI2fcC/Md
+                                        SfKXEU++H8afQsyXqw8x7Csb/rQgLLDwhGXC
+                                        3R2nzgvg8OTgCkWt8VjAGWWmt8j7L08rP6pg
+                                        aeJp8QTWzsCYK1lEUTgsFjOs2a4pUz0Z6065
+                                        PUG11M1HbcPEcETZsMZC405lULfxm0qGk4KT
+                                        DJwK6mUcNcw3f+6RP5NoaDgKhdj+962t8A0= )
+                        86400   RRSIG   DNSKEY 8 5 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        QDPVCNU3tkaShtqYcEXLRYym3zuprtsDWwlQ
+                                        XfRjK69Veu8MtZqe5VZGtF5C+DwN3XJl1hjp
+                                        RPwjn4E4y5DJT7XGNylpyFGdzSOBNz7N9mKp
+                                        ElzOfMXLLCYnZO84FMseM3Z3CIQ+RAmVcCUy
+                                        EJj4I9Z30K4siyf4dxB8AgnixmnuGyHl7HYd
+                                        H2pLOIRE/fLUWZE4I2Gk5PSMuScBOCZAoACF
+                                        MTqz71hmbHGZiPCXQWJPWQ+H0L+oZSijlSmh
+                                        5m+FOlXsAWi63MKucPo1Itl8RccGObTUpgO7
+                                        v95VW/GtRh7baE9MB64JaB7LkgE2iQHNfTtB
+                                        eyrlZD/idA+FlKJyww== )
+                        0       NSEC3PARAM 1 0 0 E136F26800BC3F74
+                        0       RRSIG   NSEC3PARAM 8 5 0 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        DqBAcpsq+J8FT52t2/lGJcO3ExelGxnGQkwF
+                                        oh7SaGiVX0wpM5m5W4KgUVkNPhvpCOGnTVwP
+                                        jxcBqp3Na9OEcMgLlzesmEA9TxStR7yi3Elw
+                                        27y/zM3EYP3UixDypGCrDpfpEbzCl6X/8Oph
+                                        HT0VaD1sr/Dg8VCkBdqRsp0/8Czj/hS9iLZc
+                                        FdLqO27F9Dzc/H4cb9/scz5Q1fRkUNCqtFXN
+                                        U3cev5FpF4XswEueLHzgBncMgdP2OULL4YE3
+                                        8j0w7YM6UO48QrLFrfAPNQOMAuihXAl/j3J9
+                                        0B+RkDUmYdRYah/8q5qecb+V4/XO69yTKJGr
+                                        k3H23rjH8yxjn7xeOg== )
+113.31.178.51.in-addr.arpa. 86400 IN PTR ns.l2-1.ephec-ti.be.
+                        86400   IN PTR  b2b.l2-1.ephec-ti.be.
+                        86400   IN PTR  www.l2-1.ephec-ti.be.
+                        86400   IN PTR  mail.l2-1.ephec-ti.be.
+                        86400   RRSIG   PTR 8 6 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        aWhTeZM8JDsr0H8VzZmxKSMmSWBTfISG4Y2U
+                                        iY9z93JmFy3oZl3fvUuqC3KRpK8C0Z6Hcu2h
+                                        Q4/H/C6wfz6q8N2GtuQ8f8s6rropGYfw2Lnw
+                                        omyTzswlKxEBwQiP9GFiTDpDBYk5WNrsXg9m
+                                        VYpuhGRb/21M0HusQrGn00ZgVQZceqfTJVzW
+                                        NCQ7PKTXfGKgjdyEyYQeyOviBQovpdv8Xjkf
+                                        z4mmbwqSht3wW2QuqPfWtesbb2iwkhAu5Qrf
+                                        hVaffbZrna9PDUTKdkMQ0FcIf/vf3CXbqFsH
+                                        Y1VrYibZcjlDM3GQyhV+P/vtRmtbK1VdokIf
+                                        NUoxGgPJvAV35DlAuw== )
+HNI67QEEIG15A03KGVTNP62DF2237U5K.31.178.51.in-addr.arpa. 86400 IN NSEC3 1 1 0 E136F26800BC3F74 (
+                                        TJ2VKF7MF2IDEMJ913B7CKVUOV8K60JU
+                                        NS SOA RRSIG DNSKEY NSEC3PARAM )
+                        86400   RRSIG   NSEC3 8 6 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        XU6l1Qlo2TovYwuX4vPiAdQvuiZowerXXM79
+                                        qs5W5TpD2fd9R4DqvBmQezPqvozwOts20UhI
+                                        tReKDxVClpq9TIqrWGQk9Pe3Uu7yvG6Fu0Zi
+                                        vrTvHwHBSOPer0wadWA3U1OiohArGEGjvuLJ
+                                        fLyEZV7dBpYiGfThqtDCoqs9EvC/ep9yXiRv
+                                        t8r0r9m5mh8LOLSM3pe9Qbjz3ISE6PPVkIK9
+                                        C7l4fcEZpCYaW09HkJkhNlrvhZsoAu7KMKci
+                                        2Kqb3Kq+scAOXL8NbmNIbwtYONOwW7F8aA++
+                                        8hpgEGeD7UHGHTtg//ervr9jIgSiSDKZ6LLI
+                                        0Bw88/fA+aEYjp8yUw== )
+TJ2VKF7MF2IDEMJ913B7CKVUOV8K60JU.31.178.51.in-addr.arpa. 86400 IN NSEC3 1 1 0 E136F26800BC3F74 (
+                                        HNI67QEEIG15A03KGVTNP62DF2237U5K
+                                        PTR RRSIG )
+                        86400   RRSIG   NSEC3 8 6 86400 (
+                                        20230701092404 20230601092404 56521 31.178.51.in-addr.arpa.
+                                        gIAxJGXkrvxD2BRaFxNs/zLB3FucWAZy1FCM
+                                        x+xgvSLz7YTXoSFPDfqAO28lQ1WAubex9jAP
+                                        W/voJMOsOj7P7UwBnhkEnysX5HDvbQL+/7PC
+                                        PDkeUpVBrTKT+PYjKNd8rfGbMiISBWUie+KN
+                                        qIPrZ1hdIXn02PsQoH7uO3rDsua6g2QaJtE6
+                                        Y3rSYx8ayc2KASnFOv6BSo348mSNrcQPxivE
+                                        JEmtV+Jv9BJXBSnkAeWCM4Yhs9OKhz5ZYByB
+                                        DJeL9AQGNauT4LTnavNkocoSewPaB9ZRJOTF
+                                        JrSKgaBNCKRkBnoNRcDKPb5PM51F0iplv50/
+                                        RvNJcRIk9dE4CiZRoQ== )

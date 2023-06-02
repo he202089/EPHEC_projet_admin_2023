@@ -1,0 +1,421 @@
+; File written on Thu Jun  1 09:53:35 2023
+; dnssec_signzone version 9.18.12-1ubuntu1-Ubuntu
+l2-1.ephec-ti.be.       86400   IN SOA  soa.l2-1.ephec-ti.be. hostmaster.l2-1.ephec-ti.be. (
+                                        2001062519 ; serial
+                                        21600      ; refresh (6 hours)
+                                        3600       ; retry (1 hour)
+                                        604800     ; expire (1 week)
+                                        86400      ; minimum (1 day)
+                                        )
+                        86400   RRSIG   SOA 8 3 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        HCimoNbtuO64rhN/je2rae7CQhbpSUK/f7QJ
+                                        gOyE96d0k3krs2b+u6KefksPMsVbo3XRNtjS
+                                        EhyfN2F8+GhkwSVttFaYhoK+bZg1F8AcjMy4
+                                        IeOS0xmpzhuqcuiUKVsTiV0lSL+aFaSmTMzB
+                                        WItaHdFQiRid5Nq0WtKFSdwc6WKXUfl7yzk7
+                                        p3L5e156G4HrrcnvLggEMcsZOW548z3E2YjK
+                                        9IqyiU+eq6DDihD4LKbtggkuFG3MeU1c84fm
+                                        pauPwzLe22ISBuNuVRuTvsdum3jdNc9iDjEf
+                                        3emJsve7Inbo28vwCEUBEO+uW9xZmfr2vycx
+                                        rCMfkd5Wp0cJgOZ5Sw== )
+                        86400   NS      ns.l2-1.ephec-ti.be.
+                        86400   RRSIG   NS 8 3 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        HUE5p1su6Gn6vTFSLifp/6UgyFcxxCQaMw4C
+                                        vgxCV7PFUbuKlOGdB/gTVNwYvULskMXOz6e5
+                                        BV+CHICaveclARv27Px7WnZDp7mNYzYh4AP4
+                                        BzE06YRvjJ8OfAUnQAJ3N7d34SG8FG/XeSs5
+                                        2P6Ro2YVumn83UEZm7cxKumzdmp+gWYHRWFd
+                                        4HMgcUZ7QNJmvhY1nQQ/hk6/XXWXhIm7gkSP
+                                        SlQK8rct5gdRzaBaPW1vsTGlBDlOhJqbf+kn
+                                        gwQDCQKdLLOYPcbutUzJYGs7I4hSdoCX+vC0
+                                        9g5POgPvRPzM+zdOq9SBkwnQjVwkQx3RvECc
+                                        6lU4xKbayl1XH6oVhQ== )
+                        86400   MX      10 mail.l2-1.ephec-ti.be.
+                        86400   RRSIG   MX 8 3 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        h1hsdS2rhJBzPCEfG9zjD+Ailz88u0UlGsLA
+                                        OOiKGHlXfYUA+u52zDbIYiQ7HGggxFMUBD1n
+                                        XiLT8lG22dVVqINCQ2MeW3S1n/altfAp3L6e
+                                        eX6cZrdqU8uYMVR7R62UbEChPSwWbTVJZHBb
+                                        9JfgfWPSKhDSLR1apTvqdvagVy4zaQ54EPfd
+                                        2cOvubX0j+HbwHW+EWUDVpQL9GbMGQju5rxv
+                                        do3E2LXbof8VqSG6WAOEVer8f5jIJnrVYBHz
+                                        CxJ24DfJcQ5O/3NMlHqKlbTVrt/uzAw9wGvg
+                                        AdqpSvrAbMThJoCC31PWxwBXDiS/pgteBlGV
+                                        vn1fROoF4178QpABvQ== )
+                        86400   TXT     "v=spf1 mx include:_spf.google.com ~all"
+                        86400   RRSIG   TXT 8 3 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        Ma793yJW3FlTV/hJxTRxl/RIvIY0RWzMDWSu
+                                        xL/QaV6vJsRlxl+BBpt4BJMohGJT5zOyey1t
+                                        v2QEza2ZBK0gXiycELHtxAVJ2HcaNuNEG3CF
+                                        Ab8PhHYMOoISSlZYOOWk4ETqVz53ZmnmAom6
+                                        7eitpxqKZxf5pYHcv4r0sU8IlHrP1OVJVxWV
+                                        cVDp3p6wXLav+ND7BbEXKnG8Hyb73upK5wck
+                                        cMop5QSQEWwQbNe5bhwGFWgbVMuIPB1gq7Oo
+                                        mRYHzry1ues5uUX3JoXiQj0XKrnZMJgMKLJC
+                                        GtPHX+cABmzK9Kek3rhkcZ55Gk79S5IN2iTU
+                                        eOJsPc1IwQtiMdeMZQ== )
+                        86400   DNSKEY  256 3 8 (
+                                        AwEAAbiQ+KoJkaOOXpe0OsXbbqnThejV7ILp
+                                        9Zc2SKBlYBkJdW82FVKJedzIbim/nPSBGq8H
+                                        L6fjI5nwFC8srJc8LAaOyKHIF/ML7ZJBzgOX
+                                        UYaNBgulsQatswsIRUGx2o4aOua62JnjXkf/
+                                        GvPzmaLfO9cyzMZvnP6nPv9y4ubey+0FVCDN
+                                        xv/+isT0AQLyxSfolOIqOHdd3xv5QKtyMeTT
+                                        RisvMRgS+MZyAQAX+p1T7JUb/KxFUgJSCyyb
+                                        58sla0IZJf/oLtBbOQLVL8Vz2gb4TKb2GBiK
+                                        GyQvO2n6TnrROqCeA6f48Clj1iuE0leuAIf3
+                                        gCcIrSpQZkstS0kIbw/fFgc=
+                                        ) ; ZSK; alg = RSASHA256 ; key id = 5656
+                        86400   DNSKEY  257 3 8 (
+                                        AwEAAa0as8GEeCe1Fsih7Q5XxZ4ikq4/BVCR
+                                        5tGt/xMv1zWCYR0P2ukzFiXMUmlKpCNmu+Sm
+                                        P13MPnP/23rYFywHvF67zJaRc58JdW+E04wo
+                                        UdTlbbwLbpBo9NZFZtmQILU/j0mrvle30YUq
+                                        tmChnz3Jyrivu5+jneBsv1EtXQFquSe2S0Yt
+                                        dF6MTpF3oaMAKkpApzyV/s3BmD/pflxn3m1p
+                                        TMRd5+zWNid//6l4ChcgxdedtuopqNXO0RAh
+                                        Z3m8Uglv5alSrImuVTavUb2ngQTV4xGtsLBL
+                                        B0ukJkSBotl8oGf0jm5HD6D5TBp5fSKZGHJZ
+                                        CiNFLDSwDOOuxZt9jOfrPkn0HnYslkJWzEyB
+                                        9FS+byJhE8bKY3KmgA86+YPi15QzBNfYWNea
+                                        JKfV3358nngw3zGK1tdQYoGgiF0CcfqMfFe7
+                                        BiD1S2tfrwUv5VE/KOQsJ9dodXHAzfXC/2zu
+                                        709GcI7Dw8AZdT7ijS8yXuW2mk+vvy7vxVw7
+                                        brfNA+gZYrFb8sAYr39Q5YwSYM+Kojp7lIbu
+                                        1JRF5i82sR7voszoo1/vOE98wWzjC6bup6pz
+                                        YfmeQEAgGT577csX2+0oLmgvBNxbzx8mEBOj
+                                        8lyhlz4hpV8qkTTDHetAADs00n5jSXnpsE5r
+                                        2krItX4LYwnvlRn04mzTrrTAvCiehx6te797
+                                        Rm4B
+                                        ) ; KSK; alg = RSASHA256 ; key id = 43972
+                        86400   RRSIG   DNSKEY 8 3 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        pJe6hvo9G8Wi2oh7tp7cCn8HUs5RnOF9QzG3
+                                        33mAHvQS7z74BK/EtEEyJa8KQXyVMoEjJDBD
+                                        u162ibSHezgBSwLnNj9ZaUgJRusZCUogzp6d
+                                        wt+FBT4YgRxpmHAyO2BmOcaoqPgrlxheqjHC
+                                        YPoiZ7v8G0jOQmPK+VefIDMDzWbhye1VwQPX
+                                        zujE/G6bA550A+diq55HhvjbCPZixdAOkmN2
+                                        zz5PZnH8fiu++NK8TEGGM19Zf0QdDKUNEN88
+                                        oKxqD1nbK/SUtB2FckjtsSxDS7imvZOw6sRi
+                                        T9VWuiNdGJj3pJ+HfouQc3EjktyK0xD0grTG
+                                        F/udLMCXsDbiJrWIbw== )
+                        86400   RRSIG   DNSKEY 8 3 86400 (
+                                        20230701085335 20230601085335 43972 l2-1.ephec-ti.be.
+                                        M3n46yODmRYASbWNPDc6DVcv6PcchhyWKudI
+                                        J3AxcXf/9zjYyYBCiCs2kDXEkwEj9TdlZAW8
+                                        t2RQuUtKUzPtPbt62PXhbNKskTmfE+S7KqJl
+                                        wadYiqTFOsLYYhVRT6zVnaBzotFfOz/saVqX
+                                        k6/1OZ/z4KhA2dTf1G8MqyLODfJW9MlJG+ae
+                                        z0aEvV0HrSdeYh3G8xkrk2Io4zhAFPGDqG8G
+                                        7QPjL7IKjWNQT1tt0j/fuWY115OeVzn6KBha
+                                        HFPsZukw6mpUPWLabax6d8iXcI6g5FAL5ncb
+                                        Rff7Qlveiq+jHBLDQ3z4HzMEhjDeAHzDplVN
+                                        bgwK8YbiRu36Vv3/6iJBKNyfA/fs8PN5lT/g
+                                        5wrwAhvXetMQjk0yVub6+7BhDrVtf5O/EL8X
+                                        VZ0X9zJCv7DwEJTL/VZk63pg5vQtvCMzKQxo
+                                        X8psJ3568bXSOh+H8Mda22dQfxhL3y5q7cnJ
+                                        rMO9M8EAbyh47ILHZfN5jPZVZPLHsrvVBDjQ
+                                        aWHXjaPjg/j+Ef/Cn78MrIr3OnaWj8Wc9ouw
+                                        Q5mBOHazlG0Nm+3oG6HmBbQRXwCUVKSMH7oP
+                                        YyfehR0D4jW/eOekNA2yOwGQu+p9vwG0CT4H
+                                        YhYPJpBK24ny3BOvSbo3sk6o55Kt5spteK0F
+                                        vGfpTUYmYqZ4XmhhhY1a9+oeigwuwpf7KyA= )
+                        0       NSEC3PARAM 1 0 0 4AD09025FC24321B
+                        0       RRSIG   NSEC3PARAM 8 3 0 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        XJ1CiOXCFI2DApPqQ0rGhdkXMjfoYgx6I6GO
+                                        lxsbc2owMbYv+kwaeVGptAIOqTHDy9LmpxzJ
+                                        6AjbmBiCtuSXXkTbXF9i8J6sfiZq2z+Fz7xo
+                                        5cEVgUMGd7Bcqd1THsJDq1gcFRyQQ458kY0V
+                                        4gMGX9cmiAZTJSvJOHwkmtMWDVSRPNfTZvZe
+                                        BnRjinGbN5YQLxtUNIO6Vww6nUYvmrLH4U1a
+                                        KE3KX/WaiQDdLyeTUbu6webrBeEU+BPv91t5
+                                        nknu93AsMb+Pgo92ZkH5dLxrXrwyODVATofd
+                                        QHUYRWJFnpuYMU9BJbn4XR7G+dsDhKlk91wv
+                                        paLG9F2/CaTrMafrOg== )
+_dmarc.l2-1.ephec-ti.be. 86400  IN TXT  "v=DMARC1; p=reject; rua=mailto:mounir@l2-1.ephec-ti.be; ruf=mailto:mounir@l2-1.ephec-ti.be; fo=1; adkim=r; aspf=r;"
+                        86400   RRSIG   TXT 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        nWebsiRxqFCeaLoeqVZpDU8xmwuqpp2Gk3Ny
+                                        Vr9xyAkUdDz4JbG0QqqXmbRZ+ZVlPYUwQZnd
+                                        acQUqZ/Gi8EoBg8PJLRNSaA3iYTymlPtkE33
+                                        KPZWCNbqnUN6GuSaljiMqbinDycbVQf5yehe
+                                        busaUkvW81oaIXpFfpa1VrgtDemlMCInUMLe
+                                        V6d/+f4q378XHs9cGRUpVNtPcquJlSSlYbO0
+                                        y4GaVyT1WOz+ml/AWQCL6M19fD73hYQQdnZ/
+                                        aQWoTXgKFQjVFRgAXH8dSaj0A8kRMUDXNdaA
+                                        rPwcplxWSvo3WXvqP62f+p2viuB3eZybQIvo
+                                        BYUMCpxKPyEl+yZoBg== )
+mail._domainkey.l2-1.ephec-ti.be. 86400 IN TXT "v=DKIM1; h=rsa-sha256; k=rsa; s=email; " "p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAtYnl6DqaozgQuoTeApjYUOwyu5y8j4kgTTtYpEmezBL79Zop0QFeVTatXX0XklL5A4pR2Kw3Omv6a1+7koT4y/XfmX2DEcUhPUuRjCrk4TrA3R5/kTOnGNF5crktcmzOzaVhoxh79aeMr55hPKJg3DrutxVfpSdPeWXW+iHU5z3t4e0uZ3ncdTlJIT/evpIcYhw74AXhtO3+pt" "fHQFzdHb2E2wAKZ4dUcUdu2RTs433wh/tsoMS15D5XKU9iwNU4yH8sa7E1vkRtBRA49h+Xo/84y06mNPqzMJlpZD0rgqXRFQwYkUOeHDMY59WkIOivY6hcxNeDvALmefv95nR6JwIDAQAB"
+                        86400   RRSIG   TXT 8 5 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        JL/t1u7HETfzIK2EctTGwTn2WmmCIw925JXZ
+                                        pXoF9UiThHh9mY04ajfv1cwfmVrevGCpLp61
+                                        UiZAYTi8UNoSvE/B7QQHkrPKU7wfsCufIDSA
+                                        Niu4vTqY49ZeW7S3rcNZYFGInWAicnEXO90B
+                                        2m/s6jmKqEm85vKyZ/tSf81oyoa03n+CVE0G
+                                        Z4TQ1Z9AfNgUvjLgCT9Qp3nl017iwXFIaraD
+                                        88iCF0JbxYOfV3lD7gASjzCaDGN+CvgquqSv
+                                        GeGXiErIbJtmqbNZqEKRbkJy+970jypTVuAh
+                                        aD5nFJ0WCbvOfYVpnRR3j+yugEsiYf6QbTZ2
+                                        3u/jNTRw0cK2rhHX9g== )
+b2b.l2-1.ephec-ti.be.   86400   IN A    51.178.31.113
+                        86400   RRSIG   A 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        rJMEZCo2CtMTYr24hBMlzUoEbzcOFC+znk+4
+                                        vhKjJaG5Jnav1FuF4l+6Ka1I0woh8lyFy8jz
+                                        y3Vz3qndlFK7ALE5aynIYHHhLE8ADRNep26X
+                                        28NwED58T7s0dsGY9wVDzqYqpeLjIaAeG6cI
+                                        vaU+Gl1SqhofeF5FwJYzgR+h35c60vVmi/6V
+                                        y4/JVQJNpMyTuM0NWOU3oR2svCiX/bzit25A
+                                        wBfp34PlU2CuKVaQZTGbp6Rb1tMKzov6ewJp
+                                        PtMOgVjzXz1Trb2B7w4wAxZjYMGw5rwE7JCY
+                                        hYeu+l62WK6H8wiSqAK+Sv/0YYFNv6HrJJRa
+                                        h9zsmWPRPqRN8/rRBg== )
+imap.l2-1.ephec-ti.be.  86400   IN CNAME mail.l2-1.ephec-ti.be.
+                        86400   RRSIG   CNAME 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        O7xJnYxqo8WWw62x34JOy4bUk/E3FIq+vwQt
+                                        iWvkpgUyPbenT5jH6c7O5d6Jb4P9reYSKPra
+                                        otJMq5HQjVDC2RFpDtNZBgZU6GrFqVJind7g
+                                        x+2ENnqJN0Kv66vXeX3KqTqQjP7z01Me3+PJ
+                                        5hcWposgc3DUx0jboyKLECLl34P2R8ZBhIeq
+                                        nC/CM/Zzcf+nbp/heKpZxqGCzv/ku8aIvscQ
+                                        ErpgKpuH5TLx06X78j6PFS1Ufr23FFFK1Bme
+                                        J+jXlJgs2Y5witgmjzYB96OVnT7f0FUsGfGh
+                                        HD1C4awjT6W6cSMlTb9BCWAofyMr63DoIKp4
+                                        iUfa0ZquHLIOxfzLaw== )
+mail.l2-1.ephec-ti.be.  86400   IN A    51.178.31.113
+                        86400   RRSIG   A 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        XT0Pp1J4lfoL6vqnhvqEy77jAzcCdd/v8pIj
+                                        Y9bTA+rOiGT7Ygc1Jv+CIh/YfMnBjRdFciQ6
+                                        o/hJsbrEY+9JQCa5nDyspae03XZLW6KTr5Hn
+                                        iPrcJZYCJ/7T/3qfRU/1oUYsyUvRh2ChzVbO
+                                        TP9OJPzcjOT3ono454wU3khY8YohpB834kA7
+                                        6ZH67lleU2rtyoa4tNnfjOFsTXCQy8Y0b5d4
+                                        Ofr9467ES0nzM9Vhd55WlciFWJuWHaD1NQAq
+                                        sLZjTcSv76E+/KSkwcsrDE1K7h+uW/poR2sy
+                                        Cq8YIvbIuSFM8f70redMK50ExHbVcrg8ojZ/
+                                        2BhtgE6IAq8rg/PsWQ== )
+ns.l2-1.ephec-ti.be.    86400   IN A    51.178.31.113
+                        86400   RRSIG   A 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        Q1rWDlZX1NnClmb2P818FmuTjaGPlKe+TqiT
+                                        XWZLd9eswk5DfsUIG+QeOC9OVRDm3pX2hBee
+                                        SoCtH1egd+p6e4ogX5AdtvGLeA4acCjjbgH2
+                                        vkAzVzV4d/9/9P69h41I7WEuxyZXfTOAtLzR
+                                        7N2VsJRkGeySlde5JSuYLh46kWKITui9cjWs
+                                        8y8x2NHVpCxxzUfBYa2b0c+PyKsHgkEUuGXz
+                                        njpGP4Z6kTXM4vaRiejIix2xf4Az0FtvIZXG
+                                        1w3fvV7e8hJo/T8vVDC4hPbL2xOSi95/tssH
+                                        Rua+Khs7/s7A1WwyKWaL2SmdfAUd+FxyXjXn
+                                        e/xXfjQwwqJGgvEAfQ== )
+pop3.l2-1.ephec-ti.be.  86400   IN CNAME mail.l2-1.ephec-ti.be.
+                        86400   RRSIG   CNAME 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        c6b0ZxcovjSebI+kDhIsVMtM4iDi+lVyC0ue
+                                        9HQ6FycdC6EfFgAJ8QclLcwkCPNaWxV1mztG
+                                        OB3By5JuQhUBls8J4KcxvgfvuCOjs1xI5DDb
+                                        m6olYOJLienO+q3SuM0wuFo2qYEwwuifqnv3
+                                        7RZ+ioEdVf+Nyr9dyhs5QZFvvz4DB8jw9YSI
+                                        YaOUXsN0JAsw0PlxuEJYGPEeylnbgnOPqtqr
+                                        HQvEaa7fM4p6dS9ux7XFnT/gQbHhEFTHRp77
+                                        XRmDis95crVnSxvHJgUQ9Jf/uQNXiSEGVM9d
+                                        pp5sA5FlybW4OgJnImkb6t+gAFhx+/CF+bFv
+                                        n0c33kgUiU7/mknkEA== )
+smtp.l2-1.ephec-ti.be.  86400   IN CNAME mail.l2-1.ephec-ti.be.
+                        86400   RRSIG   CNAME 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        gt2GVj0z5KJGOoIhNYmldH8Z8+lpxZ+31lVL
+                                        aT8bSZ/6i6t8ES1Ev+y+xdUIB8VUzhWZ49UA
+                                        putdV7vIaDHDTVrukTQ2j9IAMmoCrFVhImWh
+                                        cJRBIVKQ9WLelj6A1R9K0D8wPAL/LkQHcF0i
+                                        Pzt+0NForum4CUJYJmFBcdIEOU1/x6R/6KpD
+                                        zdlap/vMFwGzvM6D0ZNARNJnCu1wjpH8Z4q6
+                                        qeUVFr+HY9e33zRRo7zJjJEPcPQJfhMDQmxT
+                                        RLnHxTyszQy1nFAal7EJYbedcnxq01a0aICS
+                                        TTpByFc1W6YFhvsN+INRxCizEPOlsgzpEMy+
+                                        uBxexdS1sFmA/JqSIA== )
+www.l2-1.ephec-ti.be.   86400   IN A    51.178.31.113
+                        86400   RRSIG   A 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        L41OURf2j+tIrqBGWSYTfuP5MtctvmEcRwIs
+                                        jabLxMwYPK61Vurm/LFh/hxviAXowjpSQQoi
+                                        kHJ9q1VOTHqofetI7CuB5vuI43USFnIsdasQ
+                                        oEN42OxvzjZP1c0MFIdLlC9tLOkYqBud+e6v
+                                        9gXHkL9NstTccRjyGIQc98IFTRQclKXUsUoO
+                                        ceTrvsSml/bI+OzhHQxLqexpaExUd8r5+azt
+                                        G7U/YGtLpaBlKu9d1RkHASC5jXhWQ8sJAj5S
+                                        RPm5yuMHhDRm2tlrGHl6lxAXoirHrWXZ2J29
+                                        JtMABX3wrBgee5B/41jX2lWtYKotqRHByFC2
+                                        mL/x21YL2lkWN7QvGQ== )
+0EIF89P3MQ6NGHAV8IPOKNV1RP9GBGVC.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        0NQ3VFGDV1EE30R3BCB3F0KIME2GT2Q0
+                                        TXT RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        lBQBiaDpXrLvBKZwmh/uzuzy44h7yFNhrCMv
+                                        LvjrLpl/iZm1Nvt5yxrGR8bICGqnyYgx1mS8
+                                        +qVQ4CgSArdjqV6Ff2MOLg6qBjTZPB0T/2Sa
+                                        6v5gUHA08t/xnH9+6+bPrgesKgwAAQHvK44f
+                                        FW6OWLzpawa9rZTxJeJP6YbjXtmIRNjwG+4G
+                                        lI/FMQVgomS6LJVuvDaBEydn4MEKVR9qrotA
+                                        ouTP6YvMcSKBuI2Jg40CuZZE13ZuuiZt2vYJ
+                                        VtU7e1WQ6nMyRwmdiPRitMkX+kjYkFS+oWMi
+                                        PBxjqH4nG/jsIgvgstKL3lZ3RpdtHxQ3u3dZ
+                                        BvFjh8fqXrqjEI7bWA== )
+0NQ3VFGDV1EE30R3BCB3F0KIME2GT2Q0.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        1KH8BRF2I2S8M3QDVBDRNR55PODRR6G4
+                                        NS SOA MX TXT RRSIG DNSKEY NSEC3PARAM )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        X4Esdn2GkLHDF5uu5YtVsCEbakR9sKm+XuD9
+                                        j3FrgBp3XmrqsCp/u0d3sOm+JZUsfhGWhZXh
+                                        3FSpw28RECRJNB/3FOR2OowgDDhPb6UnXKlk
+                                        KXMJ3PUvoDfiNvYf5x/FibkI6BduEE0L4vgJ
+                                        9VkVPCLXOOV8+RbqBNdRgzh9k6SIkLU58cUr
+                                        AQkzg4aV49RXIi7QUp9Nwoi3nGcb1AAnVNe0
+                                        giKApg6U9wJ9NYEtq/6OaNVClfdyfBFpc/NO
+                                        zLWjEe/knfa+7kx09DryPGX0mKsKPf/mPNRg
+                                        ZoK6yEC18l4ak9xFvL8GncMtHhbpuNugBSZB
+                                        +ddWtyqOdrh3ZSomYg== )
+1KH8BRF2I2S8M3QDVBDRNR55PODRR6G4.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        2VL4EDKMPVF3TJ8FSQJ9FA1K6QF98DLJ
+                                        A RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        gfiugmIe3jCjOaV66tSR4RBwNfun1AwrQoxu
+                                        2UFz+U3EDa+vrVIEG9eMldxkGYvAemgq6E5O
+                                        7gwyxxEwcwFLfJcdjyHI2WoPEc+2CW3OqrTg
+                                        RCgThW8aeLq2KsxZXVdaYM//U/VLT9Fwf1pl
+                                        0aPjNDKRW3DNPcVsyK2LnzwECJd5rZtIYmhU
+                                        1DHfxICLIPIyNq1vZMtwa+AuGXvemk7vZefy
+                                        uXEwm/WsL5hqNRB53+rgPeC+zuGSBySzkcZX
+                                        57bEdIGvjDhT04Ou5WKW8epYXivfua0bRtS+
+                                        4LCtySvGPNhaKR53o8/YrK6U+l3VJzpd0AYW
+                                        cMZULatBtEalEwHqOA== )
+2VL4EDKMPVF3TJ8FSQJ9FA1K6QF98DLJ.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        85NB5SQNG670VLDIU2BKDC6V4GG4QQ6B
+                                        A RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        VW43DtCQjb2X3qBcvlNOFw8vppA3lp24J1Gw
+                                        w2YY4c4qJuYWBfUW31Rj3/8ELNBETmvhjZu0
+                                        95pmje+ozFS9ouZ+1j7bDLVVfsOCmV4nePDQ
+                                        CRkYnP41aKf857C1qQEMNOgkvtjwu/RSzYfW
+                                        5qtA4s0C1DTkQrT4R6MxhFQGUfaDaGHYjcWM
+                                        8DjljSbLmFAZw82hrSmJbMdLarBZpcNUTBvp
+                                        HjSoDzm7Bh3p0AQ+vVMqNSqo/ps/TZ/1NDmy
+                                        0XTudjzkwm4NSNocu7Ym0W9biH+YkQanJuvg
+                                        xC6lra2G0JBt9sjFKOgzNyF03FS7tjSLuA1H
+                                        +GX4PHTQWQTSinz9rg== )
+85NB5SQNG670VLDIU2BKDC6V4GG4QQ6B.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        C2OMPONMMJ0MCRFPK9SUS7PPHMJEVQF0
+                                        A RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        Mj61lEjw8bR95RwuoXEjqtfKE5fFFGGTmu8W
+                                        F/dGUvybqib8horvv+iwsGtkMd0/yEiZaSAr
+                                        FjVAx7qwqt6H4G0tZeGk2CCLRJup2oi3QkH3
+                                        8eIXlfr0TCYJbWC1oAcCbew8xSr3iYuH52so
+                                        BEO2GzZFYwxKmElhY2Uzwa0fw0Yzrz8T4yNP
+                                        MutctjPgh9N7LA+a/v/7jqFV8HNFj4Ma4QxE
+                                        M6oGh8GIJzfg7t3qYOdCL2y78Y3oBByr0w0k
+                                        G1qbG09lhnvF+iO0NVL+7TNxEjn3Ty0tIQ5s
+                                        rSzbyDZhMKiFzvp1ts3XIWMfJ/8WkKhnNiWd
+                                        IMJuhtSm0sy0nHIgyw== )
+C2OMPONMMJ0MCRFPK9SUS7PPHMJEVQF0.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        E66R6EG3JEEVOMH5AQ55P1CJGGBMRI6P
+                                        CNAME RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        lLSRN8JXXx8c416cug+5Cq8m6MpBGxEUTqVz
+                                        vN72LltaJvR2QOYo7iTs0ZAc88RxHaNpdvWp
+                                        0cdw00C9c25FVn/W2zgYPxJ8cuB0DXiaoGTR
+                                        fHVkjBb5Er6pyAhGtK7SqwhUHlxQk7x5wjMo
+                                        jgFFf+h8B1D+/VqNsEfsVnoJrfHt9SegBw+r
+                                        b9YDQZr8wAJJ6w3eMuFtB/R/Exk7+ehgmOLh
+                                        6jg8iv6VAJ1RpsKulIM7O122xd2g6o2yBjPs
+                                        lZYz4iIE6OLbIBUapMx7Pws4tkeSlJ39jJgC
+                                        DSO1W+UmpytW9sIbgIw5tmwtvSDnTFL+Dk4P
+                                        wePSVHLj5kEgc2gHlw== )
+E66R6EG3JEEVOMH5AQ55P1CJGGBMRI6P.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        HO1EJJ5N62QA95NBQKAF309S37FSM7VL
+                                        A RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        IeIMeiuulcuqIMKZYFJ1alYtfGpUjVHINBx6
+                                        sEVPBfjfnM7/shvxBJL+VZ8FS76CTe/pV4ZS
+                                        mt4/19wtpUY0GrWtRsxe4lKr3wBrXbon5Xed
+                                        Ob+roMKnYsfEw7c2lAugdpLz4ZknFduxcjQj
+                                        OwRMi8mlFL1KScbALcN95JKRRcOJqSsVz/IR
+                                        f10LJ/1KaO6ACI6AAncDNToHqmz+Xu+bip2X
+                                        UJZHOgvtjrXuQNBPpOse3HAfokUwVZUtiZFh
+                                        0d0nXa9x0tLUA1DI6SlL26kl9I1wnOe2odoA
+                                        SlNvR5ZqHkboRPOEFAl9C6fqFLRjWSUAz6A3
+                                        WFb0ERydshp2/H4iJg== )
+HO1EJJ5N62QA95NBQKAF309S37FSM7VL.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        PG61255V96IL4N9T0JK4NNQ27U0GMTLV )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        o98xCqgmoIINUoaNZhDTKkbrn5zTljgk6XO/
+                                        CK+b3DQ1pYpTwlQ5qP4PlngJo+ROvfINIXVb
+                                        pFvuGHY61YmKtnXTjL/90BxBDVIQWzu7uEst
+                                        422H2jSuW0lu0vHyxRyyTKqfVO6iR9OvDlUj
+                                        35sdT9hfVEz7UmhR7NaObsb46tDEJn2ANtOA
+                                        tRqKXECKwcB8XBDeDi+v1JsLy/Qd15zHBvBL
+                                        4fSVnkQKDRN1ni1r+vxqdF/xIZq7gIQjlL2l
+                                        2xhZtINZsFIP3Xn3HMP/hU5lOjTmhxiIyzAK
+                                        FB5XmgntkbeqnFTZaFDE38MI5nU99DwNqjzF
+                                        Tra/pn19ekwA6+eJpw== )
+QT2T926EJJ5N7U7IGRP63SGCPRJR8F8R.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        SIPCAM4MCVCI2EHM6FDEK6FVCTDS6LB0
+                                        CNAME RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        lmkaP8Kbn28eFIsZaGDzElqcCl2m1EN8PdZQ
+                                        yWadm8ZG3BjFUpZxCR62QECxaXcj/4N6OdsI
+                                        BkM/iDn89l0mQNfsMNJfHzOyQhuUfeurqo+u
+                                        iqk3LSLzmwtKMI1/jmCCRGiEgeQG62zRIk13
+                                        HQ+OdtaS+tUyy8ibGEhvhmq4r01MOJ2mPKSx
+                                        cC622NBYpgj0VGK2aF7A+f50L1ksC8m9X3nz
+                                        9bFYfAf6qnPxCwmFBkNi9X1fYSIRrwF1gYtk
+                                        fb5u9Lm43kNVU+0SDvoyTvPf6r6c9arEWAH6
+                                        WNq5RJlIpo22L2HSbfiWb3HruRDa+kPQmSPy
+                                        4yNhi/l1CqsOrFbPXw== )
+PG61255V96IL4N9T0JK4NNQ27U0GMTLV.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        QT2T926EJJ5N7U7IGRP63SGCPRJR8F8R
+                                        TXT RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        t/TMozcls1nLvobkQboWE4av22r2ooEWBvqE
+                                        MDnoARWJ7ThJ8g5VIBg7sml/ABDnmQjx8qYI
+                                        D1yQRmJJ1FhAK2+RY9NppzAoldgDiGaHBGlU
+                                        IdwROELv58RJC48InjJyPuy+cEP8xsWJfSVD
+                                        cEocnVm6fLqjgtBr9/K+W566aPubaNiW+vv5
+                                        tRecZigYilMR8jRQ3zTrp5AXUXGCdIdWea3E
+                                        VQIsqwxMdxNmCsbF40tHYRT6mz5Fcy1vkdIY
+                                        THzdW2tWBsT9Foa5rl3SatDFheihRbMIGBKK
+                                        Bf2NVoiV1H1s0WsyFRKWjBlDGtbwBYXS9rc4
+                                        S0u63Q7pcWL1HrI+Xg== )
+SIPCAM4MCVCI2EHM6FDEK6FVCTDS6LB0.l2-1.ephec-ti.be. 86400 IN NSEC3 1 1 0 4AD09025FC24321B (
+                                        0EIF89P3MQ6NGHAV8IPOKNV1RP9GBGVC
+                                        CNAME RRSIG )
+                        86400   RRSIG   NSEC3 8 4 86400 (
+                                        20230701085335 20230601085335 5656 l2-1.ephec-ti.be.
+                                        l9V3d/k3R3vEA6yd1rMM0CY/0i9aRX6523FT
+                                        IHwWSYML6j+D5r2RDGGgrNlU1vvGemBMeOLL
+                                        VcBz1jabgO23FR6T0S7vi00DXMvUM/vwDBaT
+                                        ESaD+ZTngvkxmOfxcJV5BGD41+12zq6SPjYa
+                                        4+uvslxZ9J1VRX+i9MyfgrbQGwpSUA+oJUEL
+                                        m4NnRNduTWiXhw3n7o5T9btFAxhu5p/vYJ4R
+                                        OX9uOHKV/7/fi73W+vpyQJaakJSUYBN1TeMX
+                                        IltggEtikwqDVyPzFdafUYN2MDVJNquyoU2c
+                                        erIBMvREqx6K7/paacQGUualqNw+PA+VeVJq
+                                        qu7gHTrcAu+MpxUhQg== )

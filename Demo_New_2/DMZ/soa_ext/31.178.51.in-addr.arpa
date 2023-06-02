@@ -1,0 +1,18 @@
+$ORIGIN 31.178.51.in-addr.arpa.
+$TTL 86400
+@    IN     SOA    soa.l2-1.ephec-ti.be.    hostmaster.l2-1.ephec-ti.be. (
+                    2001062506 ; serial
+                    21600      ; refresh after 6 hours
+                    3600       ; retry after 1 hour
+                    604800     ; expire after 1 week
+                    86400 )    ; minimum TTL of 1 day
+
+     IN     NS     ns.l2-1.ephec-ti.be.
+
+113    IN     PTR    ns.l2-1.ephec-ti.be.
+113    IN     PTR    b2b.l2-1.ephec-ti.be.
+113    IN     PTR    www.l2-1.ephec-ti.be.
+113    IN     PTR    mail.l2-1.ephec-ti.be.
+$INCLUDE "/etc/bind/K31.178.51.in-addr.arpa.ksk.key";
+$INCLUDE "/etc/bind/K31.178.51.in-addr.arpa.zsk.key";
+

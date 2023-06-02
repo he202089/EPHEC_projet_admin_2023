@@ -1,0 +1,103 @@
+# Define server identity
+#myhostname = mail.l2-1.ephec-ti.be
+#mydomain = l2-1.ephec-ti.be
+
+# Outgoing mail must use this as source address domain
+#myorigin = $mydomain
+# Accepting local mail delivery for those destinations
+#mydestination = $myhostname localhost.$mydomain localhost $mydomain
+
+#smtpd_banner = $myhostname ESMTP $mail_name
+
+# Network from which we accept smtp connexions
+#mynetworks = 192.168.0.0/24 127.0.0.0/8 [::1]/128
+#mynetworks = 0.0.0.0/0 
+#smtpd_relay_restrictions = permit_mynetworks, reject
+
+#Log configuration
+#maillog_file=/var/log/postfix.log
+#debug_peer_list = woodytoys.lab
+#debug_peer_level = 5
+
+# DKIM
+#milter_default_action = accept
+#milter_protocol = 2
+#smtpd_milters = unix:/var/run/opendkim/opendkim.sock
+#non_smtpd_milters = unix:/var/run/opendkim/opendkim.sock
+
+#smtpd_tls_cert_file=/etc/postfix/certs/server.crt
+#smtpd_tls_key_file=/etc/postfix/certs/server.key
+#smtpd_use_tls=yes
+#smtpd_tls_session_cache_database = btree:${data_directory}/smtpd_scache
+
+#smtp_tls_security_level = may
+#smtp_tls_loglevel = 1
+#smtp_tls_session_cache_database = btree:${data_directory}/smtp_scache
+
+#smtpd_recipient_restrictions =
+#        permit_mynetworks
+#        reject_unauth_destination
+#        reject_unknown_sender_domain
+#        reject_unknown_recipient_domain
+#        check_policy_service unix:private/policy-spf
+
+# Define server identity
+myhostname = mail.l2-1.ephec-ti.be
+mydomain = l2-1.ephec-ti.be
+
+virtual_mailbox_domains = l2-1.ephec-ti.be
+virtual_mailbox_base = /var/mail
+virtual_mailbox_maps = hash:/etc/postfix/vmailbox
+virtual_minimum_uid = 100
+virtual_uid_maps = static:5000
+virtual_gid_maps = static:5000
+
+mailbox_command = /usr/lib/dovecot/deliver
+mailbox_transport = lmtp:unix:private/dovecot-lmtp
+
+# Outgoing mail must use this as source address domain
+myorigin = $mydomain
+# Accepting local mail delivery for those destinations
+mydestination = $myhostname localhost.$mydomain localhost $mydomain
+
+#smtpd_banner = $myhostname ESMTP $mail_name
+smtpd_banner = $myhostname ESMTP
+# Network from which we accept smtp connexions
+mynetworks = 192.168.0.0/16 127.0.0.0/8 [::1]/128
+#mynetworks = 0.0.0.0/0 
+smtpd_relay_restrictions = permit_mynetworks, reject_unauth_destination
+
+# Activer la vérification SPF (Sender Policy Framework)
+smtpd_sender_restrictions = permit_mynetworks, reject_unknown_sender_domain, reject_unauth_pipelining, reject_non_fqdn_sender
+
+#Log configuration
+maillog_file=/var/log/postfix.log
+#debug_peer_list = woodytoys.lab
+#debug_peer_level = 5
+
+# DKIM
+milter_default_action = accept
+milter_protocol = 6
+smtpd_milters = inet:localhost:12301
+non_smtpd_milters = inet:localhost:12301
+smtpd_tls_cert_file = /etc/letsencrypt/live/www.l2-1.ephec-ti.be/fullchain.pem
+smtpd_tls_key_file = /etc/letsencrypt/live/www.l2-1.ephec-ti.be/privkey.pem
+smtpd_tls_security_level = may
+smtp_tls_security_level = may
+smtpd_tls_protocols = TLSv1.2 TLSv1.3
+#milter_default_action = accept
+#milter_protocol = 2
+#smtpd_milters = unix:/var/run/opendkim/opendkim.sock
+#non_smtpd_milters = unix:/var/run/opendkim/opendkim.sock
+
+# SPF
+smtpd_recipient_restrictions = permit_mynetworks, reject_unauth_destination, check_policy_service unix:private/policy-spf
+
+# Activation de SpamAssassin
+#content_filter = smtp-amavis:[127.0.0.1]:10024
+
+# Configuration de l'interface SMTP pour SpamAssassin
+#receive_override_options = no_address_mappings
+
+# Mise en place des en-têtes de SpamAssassin
+#header_checks = regexp:/etc/postfix/spamassassin_header_checks
